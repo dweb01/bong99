@@ -1,0 +1,205 @@
+
+/* Backtotop1 */
+.Btn-backtotop1 {
+    width: 45px;
+    height: 45px;
+      background-image: linear-gradient(325deg, #4baae5 0%, #957c57 55%, #a98034 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    bottom: 40px;
+    right: 35px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(255, 234, 2, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}  
+
+.Btn-backtotop1.show{
+    opacity: 1;
+    bottom: 35px;
+}
+.Btn-backtotop1  .Btn-backtotop1arrow  path {
+    fill: white;
+  }
+  
+  .Btn-backtotop1  .Btn-backtotop1text {
+    font-size: 0.9em;
+    width: 100px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -18px;
+    opacity: 0;
+    transition-duration: 1s;
+  }
+  
+.Btn-backtotop1:hover .Btn-backtotop1text {
+    opacity: 1;
+    transition-duration: 1s;
+  }
+  
+   .Btn-backtotop1:hover .Btn-backtotop1arrow {
+    animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+/* End Backtotop1 */
+header.is-sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	animation: fadeInDown .5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0)
+	}
+
+	to {
+		opacity: 1;
+		transform: translateZ(0)
+	}
+}
+.fancy-button {
+  width: 13rem;
+  display: inline-block;
+  padding: 6px 7px;
+  border: none;
+  background-image: linear-gradient(to right, #e74c3c 0%, #F45C43 51%, #e74c3c 100%);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.fancy-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: left 0.3s ease-in-out;
+}
+
+.fancy-button:hover {
+  transform: scale(1.1);
+}
+
+.fancy-button:hover:before {
+  left: 100%;
+}
+button.button1{
+  background: linear-gradient(to right, #34495e 0%, #475a71 51%, #34495e 100%);
+}
+.sub-menu::before{
+  content: "";
+  content: "";
+  position: absolute;
+  left: -22px;
+  bottom: 0;
+  border-right: 23px solid #E74C3A;
+  border-top: 35px solid transparent;
+}
+.sub-menu::after{
+  content: "";
+  position: absolute;
+  right: -22px;
+  bottom: 0;
+  border-left: 23px solid #e74c3c;
+  border-top: 35px solid transparent;
+}
+
+.button2{
+  background-image: linear-gradient(to right, #34495e 0%, #475a71 51%, #34495e 100%);
+}
+
+#swiper1 > .swiper-button-prev {
+  opacity: 0;
+  margin-left: 20px;
+  transition: all .5s ease;
+  width: 4rem;
+  height: 4rem;
+  border:  #fff 2px solid;
+  border-radius: 50%;
+}
+#swiper1 > .swiper-button-next {
+  opacity: 0;
+  margin-right: 20px;
+  transition: all .5s ease;
+  width: 4rem;
+  height: 4rem;
+  border:  #fff 2px solid;
+  border-radius: 50%;
+}
+#swiper1:hover > .swiper-button-prev{
+  opacity: 1;
+  margin-left: 0;
+}
+#swiper1:hover > .swiper-button-next  {
+  opacity: 1;
+  margin-right: 0;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 20px;
+  color: #fff;
+}
+#swiper1 > .swiper-button-prev:hover, #swiper1 > .swiper-button-next:hover{
+  background-color: #69c8ff;
+}
+.swiper-pagination-bullet{
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 3px #e6e6e6 solid;
+  transition: all .5s ease;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: radial-gradient(106.16% 50% at 50.43% 0, rgba(255, 244, 217, .5) 0, rgba(255, 244, 217, 0) 100%), radial-gradient(65% 65% at 50.43% 0, rgba(176, 138, 93, .5) 0, rgba(177, 148, 76, 0) 100%), linear-gradient(180deg, #846743, #6d4f2b 99.48%);
+  width: 2.6rem;
+  border-radius: 10px;
+}
+.tittle1{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tittle2{
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+iframe{
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16/9;
+}
