@@ -33,6 +33,9 @@ const swiper = new Swiper('#swiper1', {
       nextEl: '#swiper-button-next1',
       prevEl: '#swiper-button-prev1',
     },
+    autoplay: {
+      delay: 5000,
+    }
   
   });
 // const swiper2 = new Swiper('.swiper2', {
