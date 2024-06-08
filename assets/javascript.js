@@ -29,12 +29,13 @@ const swiper = new Swiper('#swiper1', {
     pagination: {
       el: '#swiper-pagination1',
     },
+
     navigation: {
       nextEl: '#swiper-button-next1',
       prevEl: '#swiper-button-prev1',
     },
     autoplay: {
-      delay: 5000,
+      delay: 3000,
     }
   
   });
