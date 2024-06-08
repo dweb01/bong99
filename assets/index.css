@@ -239,3 +239,35 @@ iframe{
   height: 2px;
   background-color: #fff;
 }
+
+
+
+.backgroundanimation {
+
+  background: linear-gradient(-45deg, #6bc5f8, #cf59e6, #6bc5f8, #cf59e6);
+  background-size: 1000% 1000%;
+  animation: gradient 7s ease infinite;
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(255, 234, 2, 0.25), inset 4px 4px 8px rgba(255, 2, 200, 0.5), inset -4px -4px 8px rgba(7, 255, 73, 0.436);
+
+  transition-duration: .1s;
+}
+/* Button's gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* Effect on click */
+.backgroundanimation:active {
+  transform: translateY(2px);
+  transition-duration: .1s;
+}
